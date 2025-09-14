@@ -1,0 +1,46 @@
+{
+  "name": "khurda-ecommerce",
+  "version": "1.0.0",
+  "description": "متجر خُردة الإلكتروني - السوق الليبي لقطع السيارات المستعملة",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build": "echo 'No build step required for this project'",
+    "test": "echo 'Tests will be added in future versions'",
+    "db:init": "echo 'Please run the SQL commands in database/init.sql in your Supabase dashboard'",
+    "lint": "echo 'Linting will be added in future versions'"
+  },
+  "keywords": [
+    "ecommerce",
+    "car-parts",
+    "libya",
+    "marketplace",
+    "supabase",
+    "nodejs",
+    "express"
+  ],
+  "author": "خُردة Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/khurda-ecommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/khurda-ecommerce/issues"
+  },
+  "homepage": "https://github.com/your-username/khurda-ecommerce#readme"
+}

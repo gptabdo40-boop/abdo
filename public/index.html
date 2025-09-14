@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خُردة | السوق الليبي لقطع السيارات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <h1>🧩 خُردة</h1>
+    <nav>
+      <button onclick="renderPage('home')">🏠 الرئيسية</button>
+      <button id="auth-nav-button" onclick="renderPage('auth')">تسجيل الدخول / التسجيل</button>
+      <button onclick="renderPage('packages')">الباقات</button>
+      <button onclick="renderPage('sellerProfile')">ملف التاجر</button>
+      <button onclick="renderPage('cart')">🛒 سلة المشتريات (<span id="cart-count">0</span>)</button>
+      <button id="dashboard-nav-button" class="hidden" onclick="renderPage('sellerDashboard')">لوحة تحكم التاجر</button>
+      <button id="logout-button" class="hidden" onclick="logoutUser()">🚪 تسجيل خروج</button>
+    </nav>
+  </header>
+
+  <main id="app-content">
+    <!-- Dynamic content will be loaded here by JavaScript -->
+  </main>
+
+  <footer>
+    © 2025 خُردة — السوق الليبي لقطع السيارات المستعملة
+  </footer>
+
+  <!-- Custom Modal for alerts and confirmations -->
+  <div id="custom-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="hideModal()">&times;</span>
+      <p id="modal-message"></p>
+      <button id="modal-ok-button" onclick="hideModal()">موافق</button>
+    </div>
+  </div>
+
+  <!-- Loading indicator -->
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p>جاري التحميل...</p>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
